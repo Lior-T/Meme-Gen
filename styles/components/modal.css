@@ -1,0 +1,21 @@
+.modal .close-button {
+  align-self: end;
+  background-color: white;
+  border: none;
+  font-size: 40px;
+  font-family: lato;
+  color: var(--clrbase);
+  cursor: pointer;
+}
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.modal form > * {
+  padding: 0.3rem;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}

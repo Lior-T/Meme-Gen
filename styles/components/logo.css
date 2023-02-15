@@ -1,0 +1,7 @@
+.logo {
+    color: var(--clr2);
+    font-family: cursive;
+    font-size: 2.1428em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}

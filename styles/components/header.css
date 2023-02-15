@@ -1,0 +1,10 @@
+.main-header {
+    height: 160px;
+}
+
+
+.main-header .main-menu a {
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+}

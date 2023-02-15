@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme G</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="main-layout">
+
+    <div class="main-screen" onclick="toggleMenu()"></div>
+    <input type="text" placeholder="Search..">
+    <header class="main-header flex space-between align-center">
+        <div class="logo">Meme G</div>
+        <nav class="main-nav">
+            <ul class="main-menu flex clean-list">
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Memes</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <button type="button" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <main class="main-content img-layout">
+        <input type="text" placeholder="Search..">
+        <div class="row">
+            <div class="column">
+                <img src="img/1.jpg" alt="">
+                <img src="img/2.jpg" alt="">
+                <img src="img/3.jpg" alt="">
+                <img src="img/4.jpg" alt="">
+        </div>
+            <div class="column">
+                <img src="img/5.jpg" alt="">
+                <img src="img/6.jpg" alt="">
+                <img src="img/7.jpg" alt="">
+                <img src="img/8.jpg" alt="">
+        </div>
+            <div class="column">
+                <img src="img/9.jpg" alt="">
+                <img src="img/10.jpg" alt="">
+                <img src="img/11.jpg" alt="">
+                <img src="img/12.jpg" alt="">
+        </div>
+            <div class="column">
+                <img src="img/13.jpg" alt="">
+                <img src="img/14.jpg" alt="">
+                <img src="img/15.jpg" alt="">
+                <img src="img/16.jpg" alt="">
+        </div>
+            <div class="column">
+                <img src="img/18.jpg" alt="">
+                <img src="img/17.jpg" alt="">
+        </div>
+
+        <canvas class="main"></canvas>
+    </main>
+
+    <section class="meme-g full main-layout">
+        <h2 class="meme-g-title">Sign up for our Meme G site!</h2>
+        <input type="email" name="" id="" placeholder="Enter a valid email address">
+    </section>
+
+    <footer class="main-footer flex space-between align-center">
+
+        <small>all rights reserved 2023</small>
+        <ul class="social-links flex clean-list">
+            <li><a href="">facebook</a></li>
+            <li><a href="">twitter</a></li>
+            <li><a href="">linkedin</a></li>
+        </ul>
+        
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open');
+        }
+    </script>
+</body>
+</html>

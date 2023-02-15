@@ -1,0 +1,51 @@
+/* MAIN LAYOUT */
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+}
+
+.main-layout > *:not(.full) {
+    grid-column: 2;
+}
+
+.main-layout > .full {
+    grid-column: 1 / -1;
+}
+
+/* CARD LAYOUT */
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .main-layout input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  
+  .main-canvas{
+    width: 300px;
+    height: 300px;
+  }
