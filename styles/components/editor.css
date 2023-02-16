@@ -1,0 +1,36 @@
+div.editor {
+  display: flex;
+}
+
+div.tools-card {
+  position: relative;
+  flex:1;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.tools-card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid gray;
+  border-radius: 20px;
+  content: '';
+  z-index: -1;
+}
+
+.tools-card input {
+}
+
+canvas.main{
+  display: none;
+  align-self: center;
+}
+
+.draw-btn.active, button.draw-btn.active:hover {
+  color: black;
+  border: 2px solid black;  
+}

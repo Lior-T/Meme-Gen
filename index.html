@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meme G</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 <body class="main-layout">
-
     <div class="main-screen" onclick="toggleMenu()"></div>
-    <input type="text" placeholder="Search..">
     <header class="main-header flex space-between align-center">
         <div class="logo">Meme G</div>
         <nav class="main-nav">
@@ -24,14 +23,14 @@
     </header>
 
     <main class="main-content img-layout">
-        <input type="text" placeholder="Search..">
+        <input class="search-input" type="text" placeholder="Search..">
         <div class="row">
             <div class="column">
                 <img src="img/1.jpg" alt="">
                 <img src="img/2.jpg" alt="">
                 <img src="img/3.jpg" alt="">
                 <img src="img/4.jpg" alt="">
-        </div>
+            </div>
             <div class="column">
                 <img src="img/5.jpg" alt="">
                 <img src="img/6.jpg" alt="">
@@ -54,8 +53,43 @@
                 <img src="img/18.jpg" alt="">
                 <img src="img/17.jpg" alt="">
         </div>
+    </div>
+    <div class="editor">
+        <canvas class="main" width="500" height="500">
+            
+        </canvas>
+        <div class="tools-card">
+            <input value="First Line" name="firstLine" type="text" onkeyup="onTextChange(event)"/>
+            <input value="Second Line" name="secondLine" type="text" onkeyup="onTextChange(event)"/>
+              <div class="toolbar">
 
-        <canvas class="main"></canvas>
+        <button onclick="setAlign('right')">
+            <i  class="bi bi-text-right"></i>
+        </button>    
+                <button onclick="setAlign('center')">
+                <i  class="bi bi-text-center"></i>
+            </button>
+            <button onclick="setAlign('left')">
+                <i  class="bi bi-text-left"></i>
+            </button>
+
+            <button onclick="SizeTextUp()">
+                <i  class="bi bi-chevron-up"></i>
+            </button>
+            <button onclick="SizeTextDown()">
+                <i  class="bi bi-chevron-down"></i>
+            </button>
+            <button class="draw-btn"  onclick="toggleDraw()">
+                <i class="bi bi-brush-fill"></i>
+            </button>
+        </div>
+        <div class="Storage">
+			<h3>Storage</h3>
+			<input type="button" value="Save" class="bi bi-save-fill" id="save">
+			<input type="button" value="Load" class="bi bi-file-arrow-up-fill" id="load">
+			<input type="button" value="Clear" class="bi bi-x-square" id="clearCache">
+		</div>
+    </div>
     </main>
 
     <section class="meme-g full main-layout">
@@ -79,5 +113,6 @@
             document.body.classList.toggle('menu-open');
         }
     </script>
+    <script src="./js/main.js" ></script>
 </body>
 </html>

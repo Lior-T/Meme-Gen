@@ -12,8 +12,9 @@
 @import 'components/header.css';
 @import 'components/logo.css';
 @import 'components/card.css';
-@import 'components/newsletter.css';
 @import 'components/screen.css';
+@import 'components/main-content.css';
+@import 'components/editor.css';
 
 /* MEDIA QUERIS */
 @import 'setup/mq.css';
