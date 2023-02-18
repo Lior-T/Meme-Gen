@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
-<body class="main-layout">
+<body class="main-layout" onload="init()" crusor="grab">
     <div class="main-screen" onclick="toggleMenu()"></div>
     <header class="main-header flex space-between align-center">
         <div class="logo">Meme G</div>
@@ -55,7 +55,7 @@
         </div>
     </div>
     <div class="editor">
-        <canvas class="main" width="500" height="500">
+        <canvas class="main" id="canvas" width="500" height="500">
             
         </canvas>
         <div class="tools-card">
@@ -74,21 +74,36 @@
             </button>
 
             <button onclick="SizeTextUp()">
-                <i  class="bi bi-chevron-up"></i>
+                A+
             </button>
             <button onclick="SizeTextDown()">
-                <i  class="bi bi-chevron-down"></i>
+                A-
             </button>
-            <button class="draw-btn"  onclick="toggleDraw()">
-                <i class="bi bi-brush-fill"></i>
+            <button onclick="addNewLine()"><i class="bi bi-chat-left-text"></i>
             </button>
+            <div>
+                <button class="colorpicker-btn">
+                <input type="color" id="colorpicker" value="#c81464" class="colorpicker">
+            </button>
+                <button class="draw-btn"  onclick="toggleDraw()">
+                    <i class="bi bi-brush-fill"></i>
+                </button>
+                <button class="delete-btn" onclick=" redraw()">
+                        <i class="bi bi-trash3"></i>
+            
+        </div>
         </div>
         <div class="Storage">
 			<h3>Storage</h3>
 			<input type="button" value="Save" class="bi bi-save-fill" id="save">
 			<input type="button" value="Load" class="bi bi-file-arrow-up-fill" id="load">
-			<input type="button" value="Clear" class="bi bi-x-square" id="clearCache">
+			<input type="button" value="Clear" class="bi bi-x-square" id="clear">
 		</div>
+        <div>
+            <button >
+                <a href="#" onclick="downloadCanvas(event)" download>Download</a>
+            </button>
+        </div>
     </div>
     </main>
 

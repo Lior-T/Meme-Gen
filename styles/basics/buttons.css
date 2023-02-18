@@ -19,24 +19,10 @@ button:hover {
 }
 
 
-/* Round */
-
-.btn-round {
-    border-radius: 2em;
+.colorpicker-btn{
+    padding: 0.425em 1.070em
 }
-
-/* // Arrow */
-
-.btn-arrow {
-    transition: padding .4s;
-}
-
-.btn-arrow:hover {
-    padding-inline-end: 2.5em;
-}
-
-.btn-arrow:hover::after {
-    content: " →";
-    position: absolute;
-    right: 1em;
+.colorpicker{
+    width: 30px;
+    height: 20px;
 }
